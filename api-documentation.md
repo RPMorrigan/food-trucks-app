@@ -6,20 +6,20 @@
 
 ## Overview
 
-| Number | Resource  | Method | Endpoint | Description | Assigned to |
-| ------ | --------- | ------ | -------- | ----------- | ----------- |
-| 1 | `food_trucks` | GET | `/get-all-food-trucks` | Retrieves all food trucks from the database. | |
-| 2 | `food_trucks` | GET | `/get-food-truck-by-id/:id` | Retrieves one food truck by its id number. | Ainslie |
-| 3 | `food_trucks` | GET | `/get-vegan-food-trucks` | Retrieves all food trucks that offer vegan options. | Babz |
-| 4 | `food_trucks` | GET | `/get-food-trucks-by-price/:price` | Retrieves food trucks that match a specific price level. | Haine |
-| 5 | `food_trucks` | GET | `/get-top-rated-food-trucks` | Retrieves food trucks with rating 4.5 or higher. | Jackie |
-| 6 | `food_trucks` | GET | `/get-food-trucks-sorted-by-rating` | Retrieves food trucks sorted by rating (highest first). | Jenny |
-| 7 | `food_trucks` | GET | `/get-food-trucks-sorted-by-price` | Retrieves food trucks sorted by price (lowest first). | Megan |
-| 8 | `food_trucks` | GET | `/get-food-trucks-count` | Retrieves the total number of food trucks in the database. | Mimi |
-| 9 | `food_trucks` | POST | `/add-one-food-truck` | Adds a new food truck to the database. | |
-| 10 | `food_trucks` | POST | `/delete-one-food-truck/:id` | Deletes one food truck by its id number. | Priscilla |
-| 11 | `food_trucks` | POST | `/update-food-truck-location` | Updates the location of a food truck. | Stephanie |
-| 12 | `food_trucks` | POST | `/update-food-truck-rating` | Updates the rating of a food truck. | Tee | 
+| Number |  Assigned to  | Method | Endpoint | Description |
+| ------ | ------------  | ------ | -------- | ----------- |
+| 1      |               | GET | `/get-all-food-trucks` | Retrieves all food trucks from the database. |
+| 2      | Ainslie       | GET | `/get-food-truck-by-id/:id` | Retrieves one food truck by its id number. |
+| 3      | Babz          | GET | `/get-vegan-food-trucks` | Retrieves all food trucks that offer vegan options. |
+| 4      | Haine         | GET | `/get-food-trucks-by-price/:price` | Retrieves food trucks that match a specific price level. |
+| 5      | Jackie        | GET | `/get-top-rated-food-trucks` | Retrieves food trucks with rating 4.5 or higher. |
+| 6      | Jenny         | GET | `/get-food-trucks-sorted-by-rating` | Retrieves food trucks sorted by rating (highest first). |
+| 7      | Megan         | GET | `/get-food-trucks-sorted-by-price` | Retrieves food trucks sorted by price (lowest first). |
+| 8      | Mimi          | GET | `/get-food-trucks-count` | Retrieves the total number of food trucks in the database. |
+| 9      |               | POST | `/add-one-food-truck` | Adds a new food truck to the database. |
+| 10     | Priscilla     | POST | `/delete-one-food-truck/:id` | Deletes one food truck by its id number. |
+| 11     | Stephanie     | POST | `/update-food-truck-location` | Updates the location of a food truck. |
+| 12     | Tee           | POST | `/update-food-truck-rating` | Updates the rating of a food truck. |
 
 ---
 
