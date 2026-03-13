@@ -154,6 +154,7 @@ Once you've finished your assigned API endpoint and helper function, gotten it a
 
 - Review the existing code in the client folder.
 - Render all food truck data on the Home page as cards.
+- Display a total count of food trucks at the top of the page.
 
 <img width="1000" alt="Home page of the Food Trucks App" src="https://github.com/user-attachments/assets/1698b582-4023-4d93-bf6e-ed092a0dfaef" />
 
@@ -163,6 +164,5 @@ Finished? Try one of these bonus challenges!
 
 1. 🌟 Add a delete button to each food on the Home page
 2. 🌟 Show a "Top Rated" badge on trucks with rating >= 4.5.
-3. 🌟 Display a total count of food trucks at the top of the page.
-4. 🌟 Add a sort feature on the frontend for price level or rating.
-5. 🌟 Add a search bar to find a food truck by name.
+3. 🌟 Add a sort feature on the frontend for price level or rating.
+4. 🌟 Add a search bar to find a food truck by name.
