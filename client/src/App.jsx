@@ -22,7 +22,7 @@ function App() {
       <h1>All Food Trucks</h1>
         <h2>Total number of food trucks: { }</h2>
 
-        <section>
+        <section className="card-wrapper">
           <Home />
     </section>
 

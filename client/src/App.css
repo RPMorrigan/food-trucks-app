@@ -76,3 +76,29 @@ form button {
   font-size: 1rem;
   cursor: pointer;
 }
+
+.card-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2rem;
+  border: solid red;
+}
+
+
+.card {
+  display: flex;
+  flex-flow: column;
+  width: 20rem;
+  height: 25rem;
+  padding: 2rem;
+  text-align: left;
+  border-radius: 0.5rem;
+  background-color: lavenderblush;
+  border: solid lavender;
+
+}
+
+.card p {
+  padding: 0;
+  margin: 0.5rem 0rem;
+}
