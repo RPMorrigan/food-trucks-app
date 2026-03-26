@@ -10,7 +10,7 @@ function App() {
         <nav>
           <Link to="/">Food Trucks App 🚚</Link>
           <Link to="/form">Add Food Truck</Link>
-        </nav>
+        </nav>        
       </header>
 
       <main>
@@ -18,6 +18,14 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/form" element={<Form />} />
         </Routes>
+
+      <h1>All Food Trucks</h1>
+        <h2>Total number of food trucks: { }</h2>
+
+        <section className="card-wrapper">
+          <Home />
+    </section>
+
       </main>
     </>
   );
