@@ -30,6 +30,11 @@ function Home() {
   }, []);
   
   return <>
+    
+    <h1>All Food Trucks</h1>
+    <h2>Total number of food trucks: { }</h2>
+
+    <section className="card-wrapper">
     {
       foodTrucks.map(truck => (
         <Card
@@ -41,7 +46,7 @@ function Home() {
       )
       )
     }
-    
+    </section>
   </>;
 }
 

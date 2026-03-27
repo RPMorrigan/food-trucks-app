@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import "../App.css"
+;
 
 const FoodTruck = ({ truck }) => {
 
@@ -16,7 +18,8 @@ const FoodTruck = ({ truck }) => {
         <>
             <div className="card">
 
-            <h2>{name}:</h2>
+                <h2>{name}:</h2>
+                <div className="p-wrap">
             <p>ID: {id}</p>
             <p>Daily Special: {daily_special}:</p>
             <p>Slogan: {slogan}</p>
@@ -24,6 +27,7 @@ const FoodTruck = ({ truck }) => {
             <p>Price Level: {price_level}</p>
             <p>Rating: {rating}</p>
             <button>Delete</button>
+                </div>
             </div>
         </>
     )

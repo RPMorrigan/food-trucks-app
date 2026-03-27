@@ -79,26 +79,85 @@ form button {
 
 .card-wrapper {
   display: flex;
-  flex-flow: row wrap;
-  gap: 2rem;
-  border: solid red;
+  flex-flow: column wrap;
+  width: 90vw;
+  max-height: 200rem;
+  gap: clamp(2rem, 2rem, 2rem);
+  justify-items: center;
+  align-content: top;
+  margin: 0 auto;
+  padding-top: 3rem;
 }
-
 
 .card {
   display: flex;
   flex-flow: column;
+  color: pink;
   width: 20rem;
-  height: 25rem;
-  padding: 2rem;
+  height: fit-content;
+  padding: 1rem 2rem 2rem;
+  margin: 0;
   text-align: left;
   border-radius: 0.5rem;
-  background-color: lavenderblush;
-  border: solid lavender;
-
+  background: lavenderblush;
+  border: solid plum;
+  transition: 500ms ease;
 }
 
-.card p {
+.card:hover {
+  background: lavender;
+  transform: scale(105%) translateY(-1rem);
+  box-shadow: 0 1rem 1rem thistle;
+  transition: 200ms ease;
+}
+
+.card:hover .p-wrap {
+  background: lavenderblush;
+  transition: 300ms ease;
+}
+
+.card h2 {
+  color: hotpink;
+  -webkit-text-stroke: 1px orchid;
+}
+
+.p-wrap {
+  display: flex;
+  flex-flow: column;
+  max-height: 80%;
+  color: purple;
+  background: mistyrose;
+  border: solid plum;
+  border-radius: 1rem;
+  padding: 1rem;
+  transition: 500ms ease;
+}
+
+.p-wrap p {
+  line-height: 1.25;
   padding: 0;
-  margin: 0.5rem 0rem;
+  margin: 0.35rem 0;
+}
+
+.p-wrap button {
+  color: purple;
+  background: lavenderblush;
+  border-radius: 0.25rem;
+  border: solid 0.15rem plum;
+  width: fit-content;
+  padding: 0.15rem 0.5rem;
+  margin: auto 0.5rem 0.5rem auto;
+  align-self: flex-end;
+  transition: 100ms ease;
+}
+
+.p-wrap button:hover {
+  background: plum;
+  color: paleturquoise;
+  border: solid 0.15rem paleturquoise;
+  transition: 100ms ease;
+}
+
+.p-wrap button:active {
+  background: lavenderblush;
 }
