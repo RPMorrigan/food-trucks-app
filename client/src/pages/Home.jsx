@@ -32,7 +32,7 @@ function Home() {
   return <>
     
     <h1>All Food Trucks</h1>
-    <h2>Total number of food trucks: { }</h2>
+    <h2>Total number of food trucks: {foodTrucks.length}</h2>
 
     <section className="card-wrapper">
     {
