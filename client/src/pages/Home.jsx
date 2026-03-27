@@ -14,7 +14,7 @@ function Home() {
   };
 
   const deleteTruck = async (id) => {
-    await fetch(`/api/delete-one-food-truck/${id}`, {
+    await fetch(`http://localhost:3000/delete-one-food-truck/${id}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -40,7 +40,7 @@ function Home() {
         <Card
           key={truck.id}
           name={truck.name}
-          onClick={() => deleteTruck(truck.id)}
+          onDelete={() => deleteTruck(truck.id)}
           truck={truck}
           />
       )

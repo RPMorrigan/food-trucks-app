@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import "../App.css"
 ;
 
-const FoodTruck = ({ truck }) => {
+const FoodTruck = ({ truck, onDelete}) => {
 
     const {
         id,
@@ -26,7 +26,7 @@ const FoodTruck = ({ truck }) => {
             <p>Has Vegan Options: {has_vegan_options}</p>
             <p>Price Level: {price_level}</p>
             <p>Rating: {rating}</p>
-            <button>Delete</button>
+            <button onClick={onDelete}>Delete</button>
                 </div>
             </div>
         </>
