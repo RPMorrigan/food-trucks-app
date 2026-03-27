@@ -78,15 +78,18 @@ form button {
 }
 
 .card-wrapper {
-  display: flex;
-  flex-flow: column wrap;
-  width: 90vw;
-  max-height: 200rem;
-  gap: clamp(2rem, 2rem, 2rem);
-  justify-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-auto-flow: dense;
+  flex-flow: row wrap;
+  width: fit-content;
+  max-height: 180rem;
+  justify-content: center;
   align-content: top;
+  gap: 2rem;
   margin: 0 auto;
-  padding-top: 3rem;
+  padding: 0;
 }
 
 .card {
@@ -108,7 +111,7 @@ form button {
   background: lavender;
   transform: scale(105%) translateY(-1rem);
   box-shadow: 0 1rem 1rem thistle;
-  transition: 200ms ease;
+  transition: 150ms ease;
 }
 
 .card:hover .p-wrap {
@@ -160,4 +163,23 @@ form button {
 
 .p-wrap button:active {
   background: lavenderblush;
+}
+
+@media (max-width: 1655px) {
+  .card-wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 1200px) {
+  .card-wrapper {
+    width: 70vw;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .card-wrapper {
+    display: flex;
+  }
 }
